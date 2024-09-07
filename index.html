@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Adesina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="togg">
+            <div class="burger" onclick="toggleNav()">&#9776;</div>
+            <div class="my-name my-name-color maria" >Maria Adesina</div>
+       </div>
+       <div class="nav-hold" onclick="toggleNav()">
+            <div class="my-image"></div>
+            <div class="my-name my-name-color" >Maria Adesina</div>
+            <div class="my-job my-name" >Front-End Engineer</div>
+            <div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+                        <li><a href="#proficiency"><i class="fa-solid fa-laptop"></i> Proficiency</a></li>
+                        <li><a href="#projects"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                        <li><a href="#resume"><i class="fa-solid fa-file"></i>  Resume</a></li>
+                        <li><a href="#contact"><i class="fa-regular fa-address-book"></i> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="socail-links">
+                <div><a href="https://www.linkedin.com/in/maria-adesina-04291223a"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></div>
+                <div><a href="https://github.com/MariaAde-Git"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+                <div><a href="https://x.com/Omolomar?t=hhudE--nrM6zzoLhJKmoHA&s=09"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a></div>
+                <div><a href="https://www.facebook.com/profile.php?id=100076315005747"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></div>
+            </div>
+        </div>
+       </div>
+        <section class="content">
+            <section id="home">
+                <div class="home-hover">
+                    <div class="home-content">
+                        <h1>Maria Adesina</h1>
+                        <h3>Hello, I am a Web Developer with passion for excellency and high quality interactivity.</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="about-text"><h1>About Me</h1>
+                    <p> My journey into web development has been intriguing with every passing day as i consistently evolve.</p></div>
+                <div class="aboutme">
+                    <div class="about-image"><img src="Assests/images/marianew.jpg" alt="maria" height="270" width="250"></div>
+                    <div class="hobby">
+                        <div class="about-write">Hi, I’m Maria Adesina a passionate about Web Developemnt, and i daily advance to ensure the user interface experience with any individual or oraganiization is nothing short of excellencec. i have worked individually on projects such as: site recreation and developemnt of a new website. Also worked in a team with a Project Manager, UI/UX desingers and Front-End developers using github, for collaboration. Motivated, punctual and open minded. Can work with a team and alone, supervised or unsupervised. </div>
+                        <div>
+                            <h4>Hobbies</h4>
+                        <div>When am not writing codes, you will find me connecting wiith other personalities, reading a book or learning some new recipes for the kitchen. And of course, i enjoy travelliing"</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="proficiency">
+                <h1>My Proficiency</h1>
+                <p class="proficiency-para">I am proficient in the use of HTML5, CSS & JavaScript.</p>
+                <div class="proficient">
+                    <div class="proficiency-image-container cont1">
+                        <div>HTML5</div>
+                        <div class="html-content html-one"><i class="fa-brands fa-html5" style="color: #f54505;"></i></div>  
+                    </div>
+                    <div class="proficiency-image-container cont2">
+                        <div>CSS</div>
+                        <div class="html-content html-two"><i class="fa-brands fa-css3" style="color: #74C0FC;"></i></div> 
+                    </div>
+                    <div class="proficiency-image-container cont3">
+                        <div>JAVASCRIPT</div>
+                        <div class="html-content html-three"><i class="fa-brands fa-js" style="color: #FFD43B;"></i></div>  
+                    </div>
+                </div> 
+            </section>
+
+            <section id="projects">
+                <h1>My Projects</h1>
+                <p class="proficiency-para">Here is the progress of my journey as a Web Dev.</p>
+                <div class="projects-images-container">
+                    <div class="slider-container  carousel-container">
+                        <div class="slider-image carousel" id="carousel"> 
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/Vephla.png" alt="remita">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/decor.png" alt="decor">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/de-cozy.png" alt="de-cozy">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/to-do.png" alt="to-do">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/remita.png" alt="remita">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/door-dash.png" alt="door-dash">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/mint.png" alt="mint">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/mod.png" alt="mint">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/slide.png" alt="slide">
+                            <img id="proficiency-image" src="/My Portfolio/Assests/images/form.png" alt="form">
+                            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+                            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+                        </div>                
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="resume">
+                <h1>My Resume</h1>
+                <p> You can download my resume, to see my professional journey, skills, and accomplishments</p>   
+                <div class="but">
+                    <div></div>
+                    <div><a href="https://drive.google.com/file/d/1V95CgCjjT7kjDJJ99uPdOzSnui_zwlKI/view?usp=sharing">Download Resume <i class="fa-solid fa-download"></i></a></div>
+                </div>
+            </section>
+<!-- footer section -->
+            <section id="contact">
+                <div class="content-header">
+                    <h1>Contact Me</h1>
+                <p>You can contact me for job opportunities, collaborations and more...</p>
+                </div>
+                <div class="contactform">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="subjectl" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="13" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        <footer id="nav-footer">
+            <p>&copy;Copyright 2024 Designed by Maria Adesina</p>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
