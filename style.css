@@ -41,7 +41,7 @@ section {
 }
 
 .my-image{
-    background-image: url('Assests/images/marianew.jpg');
+    background-image: url('Assests/images/mari.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -257,44 +257,14 @@ section {
     position: relative;
     z-index: -1;
     color: var(--WHITE);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 1.6rem;
     min-height: 50vh;
-    width: 33vw;
+    width: 100vw;
 }
-.cont1{
-    background: url('Assests/images/html.jpg') no-repeat;
-    background-size: cover;
-}
-
-.cont2{
-    background: url('Assests/images/css.png') no-repeat;
-    background-size: cover;
-}
-
-.cont3{
-    background: url('Assests/images/java.jpg') no-repeat center;
-    background-size: cover;
-}
-
-.html-content{
-    position: absolute;
-    z-index: 1;
-    top: 85.5%;
-    left: 87%;
-    border: 6px solid var(--WHITE);
-    background-color: var(--BLACK);
-    border-radius: 50%;
-    height: 18%;
-    width: 18%;
-    color: var(--NAV);
-}
-
-.html-content i{
-    font-size: 3.3rem;
-    padding: 0.9rem 0 0 0.9rem;
+.cont1 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* projects  section */
@@ -330,20 +300,22 @@ section {
 
 .carousel-container {
     position: relative;
-    /* width: 80%; */
     margin: 0 auto;
     overflow: hidden;
     min-height: 50vh;
   }
 
-.carousel {
+.carousel{
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
 
-  .carousel img {
-    width: 100%;
+.carousel a {
     flex: 0 0 100%;
+}
+
+  .carousel a img {
+    width: 100%;
     border-radius: 2rem;
   }
 
@@ -472,11 +444,11 @@ button[type="submit"]:hover {
     }
 
     body {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
    .nav-hold {
-    width: 46vw;
+    width: 70vw;
     background-color: var(--H1);
     color: var(--WHITE);
     position: fixed;
@@ -549,6 +521,14 @@ button[type="submit"]:hover {
         font-size: 3.2rem;
     }
 
+    #proficiency,
+    #resume,
+    #projects,
+    #about,
+    #contact{
+    margin-top: 4rem;
+}
+
     /* About section */
     .aboutme{
         flex-direction: column;
@@ -614,8 +594,6 @@ button[type="submit"]:hover {
         padding: 2.5rem;
     }
 
-    /* }footer */
-
     button[type="submit"] {
         margin-left: 41%;
     }
@@ -663,6 +641,15 @@ button[type="submit"]:hover {
     button[type="submit"] {
         margin-left: 13rem;
     }
+
+    #projects img{
+        height: 100%;
+    }
+
+    .proficiency-image-container{
+        margin-top: 5rem;
+    }
+
 }
 @media (max-width: 320px) {
     body {
