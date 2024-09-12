@@ -454,6 +454,7 @@ button[type="submit"]:hover {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     height: 100vh;
     display: none;
 }
@@ -475,6 +476,26 @@ button[type="submit"]:hover {
     padding-right: 2rem;
     z-index: 1;
   }
+.my-image{
+    background-image: url('Assests/images/mari.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 8rem;
+    margin-top: 1.5rem;
+    height: 19%;
+    width: 39%;
+}
+.my-image{
+    background-image: url('Assests/images/mari.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 8rem;
+    margin-top: 1.5rem;
+    height: 19%;
+    width: 50%;
+}
 
     #proficiency,
     #resume,
