@@ -10,6 +10,11 @@ function toggleNav() {
 let images = [
   {
     href: "https://mariaade-git.github.io/testimonial-grid-section/",
+    src: "Assests/images/decor.png",
+    alt: "decor"
+  },
+  {
+    href: "https://mariaade-git.github.io/testimonial-grid-section/",
     src: "Assests/images/testimonial.png",
     alt: "de-cozy"
   },
