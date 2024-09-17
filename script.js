@@ -6,50 +6,71 @@ function toggleNav() {
   navLinks.classList.toggle("active");
 }
 
-// Carousel functionality
-let currentIndex = 0;
-const autoSlideInterval = 3000; // Time between slides in milliseconds
-
-
-
-// Function to show the current slide
-function showSlide(index) {
-  const carousel = document.getElementById("carousel");
-  const slides = carousel.querySelectorAll('a');
-  const totalSlides = slides.length;
-
-  // Ensure index stays within bounds
-  if (index >= totalSlides) {
-    currentIndex = 0; // Loop back to the first slide
-  } else if (index < 0) {
-    currentIndex = totalSlides - 1; // Go to the last slide if index is negative
-  } else {
-    currentIndex = index;
+let images = [
+  {
+    href: "https://mariaade-git.github.io/testimonial-grid-section/",
+    src: "Assests/images/testimonial.png",
+    alt: "de-cozy"
+  },
+  {
+    href: "https://mariaade-git.github.io/to-do/",
+    src: "Assests/images/to-do.png",
+    alt: "to-do"
+  },
+  {
+    href: "https://mariaade-git.github.io/Rep--Dash/",
+    src: "Assests/images/dash.png",
+    alt: "dash"
+  },
+  {
+    href: "https://mariaade-git.github.io/todo2/",
+    src: "Assests/images/todo2.png",
+    alt: "to-do"
+  },
+  {
+    href: "https://mariaade-git.github.io/news-homepage-main/",
+    src: "Assests/images/home-p.png",
+    alt: "home"
+  },
+  {
+    href: "https://mariaade-git.github.io/mint/",
+    src: "Assests/images/mint.png",
+    alt: "mint"
+  },
+  {
+    href: "https://mariaade-git.github.io/slideshows/",
+    src: "Assests/images/slide.png",
+    alt: "slide"
+  },
+  {
+    href: "https://mariaade-git.github.io/validation/",
+    src: "Assests/images/form.png",
+    alt: "form"
+  },
+  {
+    href: "https://mariaade-git.github.io/accordion-and-modals/",
+    src: "Assests/images/mod.png",
+    alt: "accordion"
   }
+];
 
-  // Move the carousel to the correct slide
-  const offset = -currentIndex * 100;
-  carousel.style.transform = `translateX(${offset}%)`;
+let currentIndex = 0;
+
+function updateSlide() {
+  const sliderImage = document.getElementById("project-image");
+  const sliderLink = document.getElementById("project-link");
+
+  sliderImage.src = images[currentIndex].src;
+  sliderImage.alt = images[currentIndex].alt;
+  sliderLink.href = images[currentIndex].href;
 }
 
-// Function to go to the next slide
 function nextSlide() {
-  showSlide(currentIndex + 1);
+  currentIndex = (currentIndex + 1) % images.length;
+  updateSlide();
 }
 
-// Function to go to the previous slide
 function prevSlide() {
-  showSlide(currentIndex - 1);
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateSlide();
 }
-
-// Automatic slide change
-function autoSlide() {
-  nextSlide(); // Automatically go to the next slide
-  setTimeout(autoSlide, autoSlideInterval); // Set the timer for the next slide
-}
-
-// Automatically start the carousel and show the first slide on page load
-document.addEventListener("DOMContentLoaded", () => {
-  showSlide(0); // Show the first slide initially
-  setTimeout(autoSlide, autoSlideInterval); // Start the auto-slide functionality
-})

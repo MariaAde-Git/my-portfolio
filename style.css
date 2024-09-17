@@ -298,28 +298,28 @@ section {
     color: var(--H1);
 }
 
-.carousel-container {
+.slider-container {
     position: relative;
     margin: 0 auto;
     overflow: hidden;
     min-height: 50vh;
   }
 
-.carousel{
+.slider{
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
 
-.carousel a {
+.slider a {
     flex: 0 0 100%;
 }
 
-  .carousel a img {
+  .slider a img {
     width: 100%;
     border-radius: 2rem;
   }
 
-.carousel-btn {
+.slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
