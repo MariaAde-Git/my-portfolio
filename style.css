@@ -476,25 +476,10 @@ button[type="submit"]:hover {
     padding-right: 2rem;
     z-index: 1;
   }
+
 .my-image{
-    background-image: url('Assests/images/mari.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 8rem;
-    margin-top: 1.5rem;
-    height: 19%;
-    width: 39%;
-}
-.my-image{
-    background-image: url('Assests/images/mari.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 8rem;
-    margin-top: 1.5rem;
-    height: 19%;
-    width: 50%;
+    height: 30%;
+    width: 40%;
 }
 
     #proficiency,
@@ -671,10 +656,25 @@ button[type="submit"]:hover {
         margin-top: 5rem;
     }
 
+    .slider-btn {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        background-color: var(--NAV);
+        color: white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+      }
+
 }
 @media (max-width: 320px) {
     body {
         font-size: 1.9rem;
+    }
+    .my-name{
+        margin-top: 0;
     }
 
     #home{

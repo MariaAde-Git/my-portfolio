@@ -5,6 +5,8 @@ function toggleNav() {
   navLinks.classList.toggle("active");
 }
 
+// Slider
+
 let images = [
   {
     href: "https://mariaade-git.github.io/testimonial-grid-section/",
