@@ -2,7 +2,6 @@
 
 function toggleNav() {
   const navLinks = document.querySelector(".nav-hold");
-  // Toggle the 'active' class to show/hide the navigation links
   navLinks.classList.toggle("active");
 }
 
